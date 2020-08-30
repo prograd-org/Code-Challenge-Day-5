@@ -6,10 +6,15 @@
 
 //Write a function to return the Discount Amount
 function find_DiscountAmount(item1,item2,disc_precent){
-return null
+
+     var total = (item1 + item2)
+     var item1dis = (item1 / 100) * disc_precent
+     var item2dis = (item2 / 100) * disc_precent
+     return(total -(item1dis+item2dis))
+    return ((item1 + item2) - (((item1 / 100) * disc_precent) + (item2 / 100) * disc_precent))
 }
 
 //Write a function to return the discount percent
 function find_Discount(item1,item2,disc_precent){
-return null
+return ((disc_precent/100)*(item1+item2))
 }
