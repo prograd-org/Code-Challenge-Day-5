@@ -6,10 +6,12 @@
 
 //Write a function to return the Discount Amount
 function find_DiscountAmount(item1,item2,disc_precent){
-return null
+
+ 
+    return ((item1 + item2) - (((item1 / 100) * disc_precent) + (item2 / 100) * disc_precent))
 }
 
 //Write a function to return the discount percent
 function find_Discount(item1,item2,disc_precent){
-return null
+return ((disc_precent/100)*(item1+item2))
 }
